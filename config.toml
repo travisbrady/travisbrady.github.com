@@ -1,0 +1,35 @@
+baseURL = "https://travisbrady.github.io/"
+languageCode = "en-us"
+title = "Travis Brady"
+theme = "researcher"
+
+enableEmoji = true
+math = false  # enable KaTeX (https://katex.org/) globally
+
+[params]
+  author = "Travis Brady"
+  description = "Austin-based Data Science Leader"
+  favicon = "favicon.ico"
+  [params.footer]
+    text = "Built with Hugo using the Researcher theme"
+    url = "https://github.com/ojroques/hugo-researcher"
+
+[permalinks]
+  "/" = "/:filename"
+
+[menu]
+  [[menu.main]]
+    name = "About"
+    url = "/about"
+    weight = 1
+  [[menu.main]]
+    name = "Code"
+    url = "/code"
+    weight = 2
+  [[menu.main]]
+    name = "Posts"
+    url = "/posts"
+    weight = 3
+
+[markup.goldmark.renderer]
+  unsafe = true  # allow raw HTML in markdown files
